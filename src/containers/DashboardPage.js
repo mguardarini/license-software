@@ -1,12 +1,12 @@
 import React from 'react';
-import {cyan600, pink600, purple600, orange600} from 'material-ui/styles/colors';
-import Assessment from 'material-ui/svg-icons/action/assessment';
-import Face from 'material-ui/svg-icons/action/face';
-import ThumbUp from 'material-ui/svg-icons/action/thumb-up';
-import ShoppingCart from 'material-ui/svg-icons/action/shopping-cart';
+import {cyan600, pink600, purple600,orange300} from 'material-ui/styles/colors';
+//Icons
+import IDSecureIcon from 'material-ui/svg-icons/device/dvr';
+import IDFlexIcon from 'material-ui/svg-icons/hardware/tablet';
+
 import InfoBox from '../components/dashboard/InfoBox';
-import NewOrders from '../components/dashboard/NewOrders';
-import MonthlySales from '../components/dashboard/MonthlySales';
+// import NewOrders from '../components/dashboard/NewOrders';
+// import MonthlySales from '../components/dashboard/MonthlySales';
 import BrowserUsage from '../components/dashboard/BrowserUsage';
 import RecentlyProducts from '../components/dashboard/RecentlyProducts';
 import globalStyles from '../styles';
@@ -16,45 +16,45 @@ const DashboardPage = () => {
 
   return (
     <div>
-      <h3 style={globalStyles.navigation}>Application / Dashboard</h3>
+      <h3 style={globalStyles.navigation}>Application / Home</h3>
 
       <div className="row">
 
         <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 m-b-15 ">
-          <InfoBox Icon={ShoppingCart}
+          <InfoBox Icon={IDFlexIcon}
                    color={pink600}
-                   title="Licenças"
-                   value="1500k"
+                   title="iDFlex Pro"
+                   value="10"
           />
         </div>
 
 
         <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 m-b-15 ">
-          <InfoBox Icon={ThumbUp}
+          <InfoBox Icon={IDFlexIcon}
                    color={cyan600}
-                   title="Likes"
-                   value="4231"
+                   title="iDFlex Enterprise"
+                   value="30"
           />
         </div>
 
         <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 m-b-15 ">
-          <InfoBox Icon={Assessment}
+          <InfoBox Icon={IDSecureIcon}
                    color={purple600}
-                   title="Sales"
-                   value="460"
+                   title="iDSecure Pro"
+                   value="40"
           />
         </div>
 
         <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 m-b-15 ">
-          <InfoBox Icon={Face}
-                   color={orange600}
-                   title="New Members"
+          <InfoBox Icon={IDSecureIcon}
+                   color={orange300}
+                   title="iDSecure Enterprise"
                    value="248"
           />
         </div>
       </div>
 
-      <div className="row">
+      {/* <div className="row">
         <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-md m-b-15">
           <NewOrders data={Data.dashBoardPage.newOrders}/>
         </div>
@@ -62,7 +62,7 @@ const DashboardPage = () => {
         <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 m-b-15">
           <MonthlySales data={Data.dashBoardPage.monthlySales}/>
         </div>
-      </div>
+      </div> */}
 
       <div className="row">
         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 m-b-15 ">

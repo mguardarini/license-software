@@ -1,7 +1,6 @@
 import React from 'react';
 import Assessment from 'material-ui/svg-icons/action/assessment';
 import GridOn from 'material-ui/svg-icons/image/grid-on';
-import PermIdentity from 'material-ui/svg-icons/action/perm-identity';
 import Web from 'material-ui/svg-icons/av/web';
 import {cyan600, pink600, purple600} from 'material-ui/styles/colors';
 import ExpandLess from 'material-ui/svg-icons/navigation/expand-less';
@@ -10,10 +9,9 @@ import ChevronRight from 'material-ui/svg-icons/navigation/chevron-right';
 
 const data = {
   menus: [
-    { text: 'DashBoard', icon: <Assessment/>, link: '/dashboard' },
+    { text: 'Home', icon: <Assessment/>, link: '/dashboard' },
     { text: 'Gerar Licença', icon: <Web/>, link: '/form' },
-    { text: 'Consultar Licenças', icon: <GridOn/>, link: '/table' },
-    { text: 'Login Page', icon: <PermIdentity/>, link: '/login' }
+    { text: 'Consultar Licenças', icon: <GridOn/>, link: '/table' }
   ],
   tablePage: {
     items: [
@@ -29,10 +27,10 @@ const data = {
   },
   dashBoardPage: {
     recentProducts: [
-      {id: 1, title: 'Samsung TV', text: 'Samsung 32 1080p 60Hz LED Smart HDTV.'},
-      {id: 2, title: 'Playstation 4', text: 'PlayStation 3 500 GB System'},
-      {id: 3, title: 'Apple iPhone 6', text: 'Apple iPhone 6 Plus 16GB Factory Unlocked GSM 4G '},
-      {id: 4, title: 'Apple MacBook', text: 'Apple MacBook Pro MD101LL/A 13.3-Inch Laptop'}
+      {id: 1, title: 'iDFlex Pro', text: 'Empresa Head.'},
+      {id: 2, title: 'iDFlex Enterprise', text: 'Empresa Head.'},
+      {id: 3, title: 'iDSecure Pro', text: 'Empresa Head.'},
+      {id: 4, title: 'iDSecure Enterprise', text: 'Empresa Head.'}
     ],
     monthlySales: [
       {name: 'Jan', uv: 3700},
@@ -58,9 +56,9 @@ const data = {
       {pv: 4300}
     ],
     browserUsage: [
-      {name: 'Chrome', value: 800, color: cyan600, icon: <ExpandMore/>},
-      {name: 'Firefox', value: 300, color: pink600, icon: <ChevronRight/>},
-      {name: 'Safari', value: 300, color: purple600, icon: <ExpandLess/>}
+      {name: 'iDFlex Pro', value: 800, color: cyan600, icon: <ExpandMore/>},
+      {name: 'iDSecure Pro', value: 300, color: pink600, icon: <ChevronRight/>},
+      {name: 'iDSecure Enterprise', value: 300, color: purple600, icon: <ExpandLess/>}
     ]
   }
 };

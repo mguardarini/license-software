@@ -20,7 +20,8 @@ class Header extends React.Component {
         position: 'fixed',
         top: 0,
         overflow: 'hidden',
-        maxHeight: 57
+        maxHeight: 57,
+        background_color:'#11112F'
       },
       menuButton: {
         marginLeft: 10
@@ -51,9 +52,9 @@ class Header extends React.Component {
                             targetOrigin={{horizontal: 'right', vertical: 'top'}}
                             anchorOrigin={{horizontal: 'right', vertical: 'top'}}
                   >
-                    <MenuItem key={1} primaryText="Application 1"/>
-                    <MenuItem key={2} primaryText="Application 2"/>
-                    <MenuItem key={3} primaryText="Application 3"/>
+                    <MenuItem primaryText="Home" containerElement={<Link to="/home"/>}/>
+                    <MenuItem primaryText="Gerar Licença" containerElement={<Link to="/form"/>}/>
+                    <MenuItem primaryText="Consultar" containerElement={<Link to="/table"/>}/>
                   </IconMenu>
                   <IconMenu color={white}
                             iconButtonElement={
@@ -62,7 +63,7 @@ class Header extends React.Component {
                             targetOrigin={{horizontal: 'right', vertical: 'top'}}
                             anchorOrigin={{horizontal: 'right', vertical: 'top'}}
                   >
-                    <MenuItem primaryText="Sign out" containerElement={<Link to="/login"/>}/>
+                    <MenuItem primaryText="Sair" containerElement={<Link to="/login"/>}/>
                   </IconMenu>
                 </div>
               }
