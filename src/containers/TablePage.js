@@ -24,10 +24,10 @@ const TablePage = () => {
     },
     columns: {
       id: {
-        width: '20%'
+        width: '15%'
       },
       name: {
-        width: '20%'
+        width: '25%'
       },
       price: {
         width: '20%'
@@ -36,7 +36,7 @@ const TablePage = () => {
         width: '20%'
       },
       edit: {
-        width: '20%'
+        width: '2%'
       }
     }
   };
