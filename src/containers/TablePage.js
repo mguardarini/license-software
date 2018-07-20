@@ -24,10 +24,10 @@ const TablePage = () => {
     },
     columns: {
       id: {
-        width: '10%'
+        width: '20%'
       },
       name: {
-        width: '40%'
+        width: '20%'
       },
       price: {
         width: '20%'
@@ -36,7 +36,7 @@ const TablePage = () => {
         width: '20%'
       },
       edit: {
-        width: '10%'
+        width: '20%'
       }
     }
   };
@@ -55,10 +55,11 @@ const TablePage = () => {
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHeaderColumn style={styles.columns.id}>ID</TableHeaderColumn>
-              <TableHeaderColumn style={styles.columns.name}>Name</TableHeaderColumn>
-              <TableHeaderColumn style={styles.columns.price}>Price</TableHeaderColumn>
-              <TableHeaderColumn style={styles.columns.category}>Category</TableHeaderColumn>
+              <TableHeaderColumn style={styles.columns.name}>Tipo</TableHeaderColumn>
+              <TableHeaderColumn style={styles.columns.name}>Serial</TableHeaderColumn>
+              <TableHeaderColumn style={styles.columns.name}>Empresa</TableHeaderColumn>
+              <TableHeaderColumn style={styles.columns.name}>Vendedor</TableHeaderColumn>
+              <TableHeaderColumn style={styles.columns.name}>Data</TableHeaderColumn>
               <TableHeaderColumn style={styles.columns.edit}>Edit</TableHeaderColumn>
             </TableRow>
           </TableHeader>
@@ -66,6 +67,7 @@ const TablePage = () => {
             {Data.tablePage.items.map(item =>
               <TableRow key={item.id}>
                 <TableRowColumn style={styles.columns.id}>{item.id}</TableRowColumn>
+                <TableRowColumn style={styles.columns.name}>{item.name}</TableRowColumn>
                 <TableRowColumn style={styles.columns.name}>{item.name}</TableRowColumn>
                 <TableRowColumn style={styles.columns.price}>{item.price}</TableRowColumn>
                 <TableRowColumn style={styles.columns.category}>{item.category}</TableRowColumn>
