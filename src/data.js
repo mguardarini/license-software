@@ -2,7 +2,7 @@ import React from 'react';
 import Assessment from 'material-ui/svg-icons/action/assessment';
 import GridOn from 'material-ui/svg-icons/image/grid-on';
 import Web from 'material-ui/svg-icons/av/web';
-import {cyan600, pink600, purple600} from 'material-ui/styles/colors';
+import {cyan600, pink600, purple600,orange300} from 'material-ui/styles/colors';
 import ExpandLess from 'material-ui/svg-icons/navigation/expand-less';
 import ExpandMore from 'material-ui/svg-icons/navigation/expand-more';
 import ChevronRight from 'material-ui/svg-icons/navigation/chevron-right';
@@ -56,9 +56,10 @@ const data = {
       {pv: 4300}
     ],
     browserUsage: [
-      {name: 'iDFlex Pro', value: 800, color: cyan600, icon: <ExpandMore/>},
-      {name: 'iDSecure Pro', value: 300, color: pink600, icon: <ChevronRight/>},
-      {name: 'iDSecure Enterprise', value: 300, color: purple600, icon: <ExpandLess/>}
+      {name: 'iDFlex Pro', value: 800, color: pink600, icon: <ExpandMore/>},
+      {name: 'iDSecure Pro', value: 300, color: purple600, icon: <ChevronRight/>},
+      {name: 'iDSecure Enterprise', value: 300, color: orange300, icon: <ExpandLess/>},
+      {name: 'iDFlex Enterprise', value: 300, color: cyan600, icon: <ExpandLess/>}
     ]
   }
 };
